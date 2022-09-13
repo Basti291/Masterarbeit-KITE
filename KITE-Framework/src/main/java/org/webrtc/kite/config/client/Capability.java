@@ -34,7 +34,7 @@ public class Capability extends KiteEntity implements SampleData {
   private Map<String, String> extraCapabilities = new HashMap<>();
   private Integer maxInstances;
   private List<String> flags = new ArrayList<>();
-  private Boolean headless = false;
+  private Boolean headless = true;
   private Boolean technologyPreview = false;
   private Boolean useFakeMedia = true;
   private String windowSize = DEFAULT_WINDOW_SIZE;
@@ -48,9 +48,9 @@ public class Capability extends KiteEntity implements SampleData {
   public Capability(JsonObject jsonObject) {
     this();
     // Mandatory
-    this.maxInstances = jsonObject.getInt("maxInstances", DEFAULT_MAXINSTANCES);
+    this.maxInstances = 1;//jsonObject.getInt("maxInstances", DEFAULT_MAXINSTANCES);
     this.gateway = Gateway.valueOf(jsonObject.getString("gateway", "none"));
-    this.headless = jsonObject.getBoolean("headless", headless);
+    this.headless = true;//jsonObject.getBoolean("headless", headless);
     this.useFakeMedia = jsonObject.getBoolean("useFakeMedia", useFakeMedia);
     this.technologyPreview = jsonObject.getBoolean("technologyPreview", technologyPreview);
     this.windowSize = jsonObject.getString("windowSize", windowSize);

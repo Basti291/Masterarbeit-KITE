@@ -92,5 +92,7 @@
     <module>KITE-Example-Test</module>
     <module>KITE-AppRTC-Test</module>
     <module>KITE-WPT-Test</module>
+    <module>KITE-JanusTutorial-Test</module>
+    <module>KITE-AntMediaTest-Test</module>
   </modules>
 </project>

@@ -6,7 +6,7 @@ import org.webrtc.kite.example.pages.GoogleSearchPage;
 
 public class GoogleSearchStep extends TestStep {
   
-  private final String TARGET = "CoSMo Software Consulting";
+  private final String TARGET = "Telgte";
   private final GoogleSearchPage searchPage;
   
   public GoogleSearchStep(Runner runner) {

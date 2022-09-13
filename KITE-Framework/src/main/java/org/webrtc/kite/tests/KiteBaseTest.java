@@ -776,8 +776,13 @@ public abstract class KiteBaseTest extends ArrayList<TestRunner> implements Step
    */
   public int getInterval(int id) {
     //min 200 ms
-    int interval = testConfig.getInterval();
-    return id % testConfig.getIncrement() * interval;
+    int rampUpPosition = id / 10;
+    int rampUpTime = rampUpPosition * 60000;    // Für intervall hier ändern
+    logger.info(rampUpTime);
+    return rampUpTime;
+
+    //int interval = testConfig.getInterval();
+    //return id % testConfig.getIncrement() * interval;
   }
 
   public void setDelayForClosing(long delayForClosing) {

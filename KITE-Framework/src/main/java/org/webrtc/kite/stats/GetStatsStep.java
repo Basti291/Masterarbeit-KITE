@@ -51,6 +51,8 @@ public class GetStatsStep extends TestStep {
 
   @Override
   protected void step() throws KiteTestException {
+
+    String getStatsScript = "return window.rtcStats;";
     try {
       RTCStatMap results = getPCStatOvertime(webDriver, getStatsConfig, batchId, runner.getPlatform());
       results.setRegionId(this.runner.getClientRegion());

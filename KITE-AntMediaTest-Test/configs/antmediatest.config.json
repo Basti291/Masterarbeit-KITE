@@ -1,0 +1,27 @@
+{
+  "name": "AntMediaTest %ts",
+  "grids": [
+    {
+      "type": "local",
+      "url": "http://35.246.242.106:4444/wd/hub"
+    }
+  ],
+  "tests": [
+    {
+      "name": "AntMediaTest Test %ts",
+      "tupleSize": 20,
+      "description": "AntMediaTest test description",
+      "testImpl": "org.webrtc.kite.antmediatest.KiteAntMediaTestTest",
+      "payload" : {
+        "url": "https://sprafke-wwu.de:5443/WebRTCAppEE/player.html"
+      }
+    }
+  ],
+  "clients": [
+    {
+      "browserName": "firefox",
+      "version": "101",
+      "platform": "LINUX"
+    }
+  ]
+}

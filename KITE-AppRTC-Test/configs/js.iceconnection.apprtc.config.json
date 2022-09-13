@@ -30,6 +30,7 @@
   "clients": [
     {
       "browserName": "chrome",
+      "version": "102",
       "platform": "localhost",
     }
   ]

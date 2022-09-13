@@ -1,0 +1,31 @@
+{
+  "name": "AntMediaTest %ts",
+  "grids": [
+    {
+      "type": "local",
+      "url": "http://localhost:4444/wd/hub"
+    }
+  ],
+  "tests": [
+    {
+      "name": "AntMediaTest Test %ts",
+      "tupleSize": 1,
+      "description": "AntMediaTest test description",
+      "testImpl": "AntMediaTest.js",
+      "payload" : {
+        "url": "https://google.com",
+        "testTimeout": 60
+      }
+    }
+  ],
+  "clients": [
+    {
+      "browserName": "chrome",
+      "platform": "localhost"
+    },
+    {
+      "browserName": "firefox",
+      "platform": "localhost"
+    }
+  ]
+}

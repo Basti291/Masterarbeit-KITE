@@ -16,13 +16,13 @@ rem Set to TRUE to use localhost or FALSE to use the host's IP address
 set LOCALHOST=TRUE
 
 rem Selenium version
-set SELENIUM_VERSION_SHORT=3.141
-set SELENIUM_VERSION=3.141.59
+set SELENIUM_VERSION_SHORT=4.2
+set SELENIUM_VERSION=4.2.1
 
 rem Browser versions
-set CHROME_VERSION=87
-set FIREFOX_VERSION=83
+set CHROME_VERSION=102
+set FIREFOX_VERSION=101
 
 rem ChromeDriver and GeckoDriver versions
-set CHROMEDRIVER_VERSION=87.0.4280.88
-set GECKO_VERSION=v0.28.0
+set CHROMEDRIVER_VERSION=102.0.5005.61
+set GECKO_VERSION=v0.31.0

@@ -1,0 +1,28 @@
+{
+  "name": "JanusTutorial %ts",
+  "grids": [
+    {
+      "type": "local",
+      "url": "http://34.159.43.94:4444/wd/hub"
+    }
+  ],
+  "tests": [
+    {
+      "name": "JanusTutorial Test %ts",
+      "tupleSize": 150,
+      "description": "JanusTutorial test description",
+      "testImpl": "org.webrtc.kite.janustutorial.KiteJanusTutorialTest",
+      "payload" : {
+        "url": "http://157.230.126.190:8000/streamingtest.html"
+      }
+    }
+  ],
+  "clients": [
+    {
+      "browserName": "firefox",
+      "version": "101",
+      "platform": "LINUX"
+    }
+
+  ]
+}
