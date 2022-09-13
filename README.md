@@ -1,3 +1,7 @@
+Kopiert von https://github.com/webrtc/KITE
+Die Module des KITE-Frameworks wurden leicht verändert für meinen Bedarf, sodasss die LAsttests laufen.
+Die Module KITE-AntMediaTest-Test und KITE-JanusTutorial-Test sind neu und darin sind die Tests enthalten, die die Datengrundlage der Arbeit erzeugen.
+
 # This is KITE 2.0, Karoshi Interoperability Testing Engine (version 2.0)
 
 _* Change to kite command (28 December 2020), all existing commands need prefix __kite____ (Ex: r -> kite_r)
